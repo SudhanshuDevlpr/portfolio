@@ -1596,7 +1596,7 @@ body.overlay__active::before,
     offcanvas header css
 */
 .header__sticky.sticky .offcanvas__header--menu__open--btn {
-  color: var(--body-text-color) !important;
+  color: #ee5f38;
 }
 
 .offcanvas__header--menu__open {
@@ -1698,7 +1698,7 @@ body.overlay__active::before,
   padding: 0;
   text-indent: -9999px;
   border: none;
-  background-color: transparent;
+  background-color:  #ee5f38;
 }
 
 .offcanvas__close--btn::before, .offcanvas__close--btn::after {
