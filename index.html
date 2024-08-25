@@ -8,7 +8,7 @@
   <title>Sudhanshu Personal Portfolio website</title>
   <meta name="description" content="Morden Bootstrap HTML5 Template">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico"> -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     
    <!-- ======= All CSS Plugins here ======== -->
   <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
@@ -27,6 +27,17 @@
   <link rel="stylesheet" href="assets/css/rtl.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.documentElement.classList.add("dark");
+    } 
+    if (localStorage.getItem("theme-color") === "light") {
+      document.documentElement.classList.remove("dark");
+    } 
+  </script>
+
 </head>
 
 <body class="bg-dark_primary_bg">
@@ -160,11 +171,10 @@
                             <div class="social__share d-flex align-items-center">
                                 <span class="social__share--title">Follow Me: </span>
                                 <ul class="social__share--wrapper d-flex">     
-                                    <a href="https://www.linkedin.com/in/sudhanshusingh5656/" target="_blank">
-                                        <span style="color: #ee5f38;">LinkedIn</span>
-                                      </a>                                        </a>
+                                       <a href="linkedin.com/in/sudhanshusingh5656/" > <span style="color: #ee5f38;" >Linkdin</span></a>
+                                        </a>
                                     </li>
-                                        <a href="https://github.com/SudhanshuDevlpr"><span style="color: #ee5f38;">Github</span></a>
+                                        <a href="github.com/SudhanshuDevlpr"><span style="color: #ee5f38;">Github</span></a>
                                         </a>
                                     </li>
                                 </ul>
@@ -644,8 +654,8 @@
                                 <div class="contact__info--content">
                                     <h3 class="contact__info--title">Call Me</h3>
                                     <p class="contact__info--desc">
-                                        <a href="tel:+880254615566">+6393788060</a> <br>
-                                        <a href="tel:+880254615566">+8738074517</a>
+                                        <a href="tel:+880254615566">+880254615566</a> <br>
+                                        <a href="tel:+880254615566">+880254615566</a>
                                     </p>
                                 </div>
                             </div>
@@ -656,7 +666,8 @@
                                 <div class="contact__info--content">
                                     <h3 class="contact__info--title">Email Us</h3>
                                     <p class="contact__info--desc">
-                                        <a href="mailto:info@example.com">singhsduhanshu5656@yahoo.com</a> <br>
+                                        <a href="mailto:info@example.com">info@example.com</a> <br>
+                                        <a href="mailto:info@example.com">info@example.com</a>
                                     </p>
                                 </div>
                             </div>
@@ -667,8 +678,8 @@
                                 <div class="contact__info--content">
                                     <h3 class="contact__info--title">Address</h3>
                                     <p class="contact__info--desc">
-                                        Prayagraj Uttar Pradesh<br>
-                                           India
+                                        20, 25 Dhaka,0123 <br>
+                                            Ratrba baraj,20
                                     </p>
                                 </div>
                             </div>
