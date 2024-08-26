@@ -33,9 +33,9 @@
     if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
       document.documentElement.classList.add("dark");
     } 
-    if (localStorage.getItem("theme-color") === "light") {
-      document.documentElement.classList.remove("dark");
-    } 
+    // if (localStorage.getItem("theme-color") === "light") {
+    //   document.documentElement.classList.remove("dark");
+    // } 
   </script>
 
 </head>
@@ -211,7 +211,7 @@
                                     <h3 class="services__card--title mb-15">Custom Web Application Development</h3>
                                     <p class="services__card--desc mb-20">Custom web apps tailored to your needs, focusing on scalability, security, and performance.
                                     </p>
-                                    <a class="services__card--link color1" href="services.html">Read More</a>
+                                    <!-- <a class="services__card--link color1" href="services.html">Read More</a> -->
                                 </div>
                             </div>
                         </div>
@@ -223,7 +223,7 @@
                                 <div class="services__card--content">
                                     <h3 class="services__card--title mb-15">Front-End Development</h3>
                                     <p class="services__card--desc mb-20">Engaging UI with HTML5, CSS3, and JavaScript. Services: responsive design, dynamic elements, and UX optimization.</p>
-                                    <a class="services__card--link color2" href="services.html">Read More</a>
+                                    <!-- <a class="services__card--link color2" href="services.html">Read More</a> -->
                                 </div>
                             </div>
                         </div>
@@ -236,7 +236,7 @@
                                     <h3 class="services__card--title mb-15">Back-End Development</h3>
                                     <p class="services__card--desc mb-20">Robust back-end development with PHP and Laravel : API development, database management, and server-side logic.
                                     </p>
-                                    <a class="services__card--link color3" href="services.html">Read More</a>
+                                    <!-- <a class="services__card--link color3" href="services.html">Read More</a> -->
                                 </div>
                             </div>
                         </div>
@@ -249,7 +249,7 @@
                                     <h3 class="services__card--title mb-15">E-Commerce Solutions</h3>
                                     <p class="services__card--desc mb-20">
                                         Custom e-commerce solutions with product catalogs, secure carts, and inventory management.</p>
-                                    <a class="services__card--link color4" href="services.html">Read More</a>
+                                    <!-- <a class="services__card--link color4" href="services.html">Read More</a> -->
                                 </div>
                             </div>
                         </div>
@@ -261,7 +261,7 @@
                                 <div class="services__card--content">
                                     <h3 class="services__card--title mb-15">Maintenance & Support</h3>
                                     <p class="services__card--desc mb-20">Maintenance & support for a secure, updated, and smooth-running website.</p>
-                                    <a class="services__card--link color5" href="services.html">Read More</a>
+                                    <!-- <a class="services__card--link color5" href="services.html">Read More</a> -->
                                 </div>
                             </div>
                         </div>
@@ -273,7 +273,7 @@
                                 <div class="services__card--content">
                                     <h3 class="services__card--title mb-15">Provide Solution</h3>
                                     <p class="services__card--desc mb-20">Delivering tailored web solutions to meet your unique business needs.</p>
-                                    <a class="services__card--link color6" href="services.html">Read More</a>
+                                    <!-- <a class="services__card--link color6" href="services.html">Read More</a> -->
                                 </div>
                             </div>
                         </div>
@@ -629,10 +629,11 @@
                         <div class="contact__left">
                             <div class="section__heading mb-50">
                                 <span class="section__heading--subtitle text__secondary">CONTACT</span>
-                                <h2 class="section__heading--title mb-10">Contact me for work </h2> 
+                                <h2 class="section__heading--title mb-10">Contact me for hire</h2> 
                             </div>
                             <form class="contact__form" action="#">
                                 <div class="row">
+                                    <div class="alert alert-dark d-none" id="request">Request Send Successefully</div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
                                         <input class="contact__input--field" placeholder="Your name" type="text">
                                     </div>
@@ -731,6 +732,10 @@
   </script>
   
 </body>
-
+<script>
+    document.getElementById('request').addEventListener(onclick,function(){
+        
+    })//need to use css onclick pr display none remove krna hais
+</script>
 <!-- Mirrored from themihub.com/html/morex-bootstrap/morex/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 05:54:49 GMT -->
 </html>
