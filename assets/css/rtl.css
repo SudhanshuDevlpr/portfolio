@@ -1,10 +1,4 @@
-/*
-    Rtl version css
-*/
 
-/*
-    hero section css
-*/
 [dir="rtl"] .light__dark--btn.style__fixed{
     left: 0;
     right: auto;
