@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 
 
 <!-- Mirrored from themihub.com/html/morex-bootstrap/morex/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 05:54:49 GMT -->
@@ -33,9 +33,9 @@
     if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
       document.documentElement.classList.add("dark");
     } 
-    // if (localStorage.getItem("theme-color") === "light") {
-    //   document.documentElement.classList.remove("dark");
-    // } 
+    if (localStorage.getItem("theme-color") === "dark") {
+      document.documentElement.classList.remove("dark");
+    } 
   </script>
 
 </head>
@@ -723,12 +723,12 @@
   <!-- Dark to light js -->
   <script>
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    // if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-    //   document.getElementById("light__to--dark")?.classList.add("dark--version");
-    // } 
-    // if (localStorage.getItem("theme-color") === "light") {
-    //   document.getElementById("light__to--dark")?.classList.remove("dark--version");
-    // } 
+    if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.getElementById("light__to--dark")?.classList.add("dark--version");
+    } 
+    if (localStorage.getItem("theme-color") === "light") {
+      document.getElementById("light__to--dark")?.classList.remove("dark--version");
+    } 
   </script>
   
 </body>
